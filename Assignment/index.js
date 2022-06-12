@@ -13,7 +13,10 @@ document.getElementById('add').addEventListener('click', () => {
     row.insertCell(4).innerHTML = `${createdDate.getFullYear()}-${createdDate.getMonth() +1}-${createdDate.getDate()}`;
     let actions= row.insertCell(5);
     actions.appendChild(createDeleteButton(id++));
-    document.getElementById('new-task').value = "";
+    document.getElementById('name').value = "";
+    document.getElementById('age').value = "";
+    document.getElementById('location').value = "";
+    document.getElementById('position').value = "";
 });
 //creates button - binds method to delete - then returns button to append child to actions
 function createDeleteButton(id){
