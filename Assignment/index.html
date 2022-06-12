@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="source.css">
+</head>
+<body class="container bg-black bg-opacity-75">
+    <nav class="mt-3 card navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" style="width:7rem; height:7rem;" alt="Matt Heine"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        </div>
+        </nav>
+    <br>
+    <div class="text-white card bg-dark">
+        <h3 class="text-center">
+            Congrats you made it this far!<br>  Below you can see a table with our employee info. <br> Fill out the form and submit to add your details to the table.
+        </h3>
+    </div><br>
+    <div class="card text-white bg-dark">
+        <div class="row m-2 text-reset">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Jerimiah Jorgenthall">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="age" placeholder="36">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <input type="text" class="form-control" id="position" placeholder="CEO">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Seattle">
+                </div>
+            </div>
+        </div><br>
+        <div> 
+            <button id="add" class="btn btn-primary form-control center">Create </button>
+        </div> <br>
+    </div><br>
+    <table id="list" class="table table-dark table-striped   table-hover curve">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Position</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Matt Heine</td>
+            <td>28</td>
+            <td>Web Developer</td>
+            <td>Missoula</td>
+            <td>2022-4-22</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Jerimiah Jorgenthall</td>
+            <td>36</td>
+            <td>Head Honcho</td>
+            <td>Salt Lake</td>
+            <td>2022-6-8</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Wally Lopez</td>
+            <td>30</td>
+            <td>Musician</td>
+            <td>Spain</td>
+            <td>2022-6-6</td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
